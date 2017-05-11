@@ -17,14 +17,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnSubmit =(Button) findViewById(R.id.btnSubmit);
-        btnSubmit.setOnClickListener(btnClick);
-
-        btnCancel =(Button) findViewById(R.id.btnCancel);
-        btnCancel.setOnClickListener(btnClick);
-
-        txtName = (TextView) findViewById(R.id.editText);
+//        btnSubmit =(Button) findViewById(R.id.btnSubmit);
+//        btnSubmit.setOnClickListener(btnClick);
+//
+//        btnCancel =(Button) findViewById(R.id.btnCancel);
+//        btnCancel.setOnClickListener(btnClick);
+//
+//        txtName = (TextView) findViewById(R.id.editText);
     }
+
+    //UI
+    //UX
 
     View.OnClickListener btnClick = new View.OnClickListener() {
         @Override

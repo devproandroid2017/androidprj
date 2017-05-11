@@ -3,6 +3,10 @@
     <string name="main_left_label">Hello world!</string>
     <string name="main_right_label">Xin chao</string>
 
+    <!-- Text for login screen -->
     <string name="button_submit">Submit</string>
     <string name="button_cancel">Cancel</string>
+    <string name="button_login">Log In</string>
+    <string name="button_forgot_password">Forgot Password?</string>
+    <string name="alert_error_message">Wrong user/pass</string>
 </resources>
