@@ -9,4 +9,11 @@
     <string name="button_login">Log In</string>
     <string name="button_forgot_password">Forgot Password?</string>
     <string name="alert_error_message">Wrong user/pass</string>
+
+    <string name="button_setting">Setting</string>
+
+    <string name="switch_language">English</string>
+
+    <string name="screen_setting">Setting</string>
+    <string name="button_setting_apply">Apply</string>
 </resources>
