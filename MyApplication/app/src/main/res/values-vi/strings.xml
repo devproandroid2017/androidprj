@@ -10,4 +10,5 @@
     <string name="main_left_label">Xin chào !</string>
     <string name="screen_setting">Thiết lập</string>
     <string name="button_setting_apply">Đồng ý</string>
+    <string name="checkbox_setting_auto_start">Tự động chạy</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.hieucao.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnSubmit;
     Button btnCancel;
     TextView txtName;
+    Button btnSetting;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.d("MainActivity","onCreate");
@@ -24,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
 //        btnCancel.setOnClickListener(btnClick);
 //
 //        txtName = (TextView) findViewById(R.id.editText);
+        btnSetting = (Button) findViewById(R.id.btnSetting);
+        btnSetting.setOnClickListener(btnClick);
     }
 
     //UI
@@ -38,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
             }else if(view.getId() == R.id.btnCancel){
                 Log.d("MainActivity","Button cancel click!");
                 txtName.setText("Cancel");
+            }else if(view.getId() == R.id.btnSetting){
+                //Chuyen sang man hinh setting
+                Intent intent = new Intent(MainActivity.this,SettingActivity.class);
+                MainActivity.this.startActivity(intent);
             }
         }
     };
