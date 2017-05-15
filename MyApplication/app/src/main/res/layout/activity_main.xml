@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,22 +7,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.hieucao.myapplication.MainActivity">
-
+    <!--<android.support.design.widget.FloatingActionButton android:id="@id/fab" />-->
     <ScrollView
-        android:layout_width="458dp"
-        android:layout_height="639dp"
+        android:layout_width="454dp"
+        android:layout_height="564dp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
+                tools:ignore="UselessParent"
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="8dp">
 
@@ -40,7 +43,8 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="SpUsage" />
 
                     <TextView
                         android:id="@+id/textView2"
@@ -48,52 +52,66 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/main_right_label"
-                        android:textSize="@dimen/primary_font" />
+                        android:textSize="@dimen/primary_font"
+                        tools:ignore="SpUsage" />
 
                 </LinearLayout>
 
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
                     android:layout_weight="1"
+                    android:contentDescription=""
                     android:src="@drawable/icon"
+                    tools:ignore="ContentDescription"
                     tools:layout_editor_absoluteX="51dp"
                     tools:layout_editor_absoluteY="16dp" />
 
                 <EditText
-                    android:id="@+id/editText2"
+                    android:id="@+id/txtMainUserName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:text="Name"
+                    tools:ignore="HardcodedText,LabelFor" />
 
                 <EditText
-                    android:id="@+id/editText"
+                    android:id="@+id/txtMainUserId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:text="@string/name"
+                    tools:ignore="LabelFor" />
 
                 <Button
                     android:id="@+id/btnSetting"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/button_setting" />
+                    android:background="@color/colorSecondary"
+                    android:text="@string/button_setting"
+                    android:textColor="@color/colorPrimaryText" />
 
                 <Button
                     android:id="@+id/btnSubmit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/button_submit" />
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorSecondary"
+                    android:text="@string/button_submit"
+                    android:textColor="@color/colorPrimaryText" />
 
                 <Button
                     android:id="@+id/btnCancel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/button_cancel" />
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorSecondary"
+                    android:text="@string/button_cancel"
+                    android:textColor="@color/colorPrimaryText" />
 
             </LinearLayout>
         </LinearLayout>

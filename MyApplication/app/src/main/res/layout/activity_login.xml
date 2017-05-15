@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorPrimaryLight"
     android:orientation="horizontal">
 
     <ScrollView
@@ -51,7 +51,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/alert_error_message"
-                    android:textColor="@color/colorAlertPrimary"
+                    android:textColor="@color/colorPrimaryText"
                     android:visibility="invisible" />
 
                 <EditText
@@ -80,7 +80,7 @@
                     android:layout_height="40dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:background="@color/colorPrimaryDark"
+                    android:background="@color/colorSecondary"
                     android:text="@string/button_login"
                     android:textColor="@android:color/white" />
 
@@ -88,8 +88,9 @@
                     android:id="@+id/button3"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:background="@android:color/transparent"
+                    android:background="@color/colorSecondary"
                     android:text="@string/button_forgot_password"
                     android:textColor="@android:color/white" />
 

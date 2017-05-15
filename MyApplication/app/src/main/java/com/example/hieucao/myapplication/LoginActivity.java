@@ -48,6 +48,12 @@ public class LoginActivity extends AppCompatActivity {
                 if("hieu".equals(txtName.getText().toString())){
                     //chuyen sang screen main
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+//                    Bundle bundle = new Bundle();
+//                    bundle.putString("username","str");
+
+                    intent.putExtra("username",txtName.getText().toString());
+                    intent.putExtra("userid",100);
+//                    intent.putExtras(bundle);
                     LoginActivity.this.startActivity(intent);
                     //startActivity(intent);
                 }else {

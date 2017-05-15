@@ -17,4 +17,5 @@
     <string name="screen_setting">Setting</string>
     <string name="button_setting_apply">Apply</string>
     <string name="checkbox_setting_auto_start">Auto start</string>
+    <string name="name">Name</string>
 </resources>

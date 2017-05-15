@@ -6,12 +6,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Button btnSubmit;
     Button btnCancel;
-    TextView txtName;
+    EditText txtUserName;
+    EditText txtUserId;
     Button btnSetting;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,15 +21,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        int userId = getIntent().getIntExtra("userid",0);
+        String userName = getIntent().getStringExtra("username");
+
 //        btnSubmit =(Button) findViewById(R.id.btnSubmit);
 //        btnSubmit.setOnClickListener(btnClick);
 //
 //        btnCancel =(Button) findViewById(R.id.btnCancel);
 //        btnCancel.setOnClickListener(btnClick);
 //
-//        txtName = (TextView) findViewById(R.id.editText);
+        txtUserName = (EditText) findViewById(R.id.txtMainUserName);
+        txtUserId = (EditText) findViewById(R.id.txtMainUserId);
         btnSetting = (Button) findViewById(R.id.btnSetting);
         btnSetting.setOnClickListener(btnClick);
+
+        txtUserName.setText(userName);
+        txtUserId.setText(Integer.toString(userId));
     }
 
     //UI
@@ -38,10 +47,10 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View view) {
             if(view.getId() == R.id.btnSubmit) {
                 Log.d("MainActivity", "Button submit click!");
-                txtName.setText("Submit");
+                txtUserName.setText("Submit");
             }else if(view.getId() == R.id.btnCancel){
                 Log.d("MainActivity","Button cancel click!");
-                txtName.setText("Cancel");
+                txtUserId.setText("Cancel");
             }else if(view.getId() == R.id.btnSetting){
                 //Chuyen sang man hinh setting
                 Intent intent = new Intent(MainActivity.this,SettingActivity.class);
