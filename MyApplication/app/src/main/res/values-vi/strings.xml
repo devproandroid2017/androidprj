@@ -6,9 +6,12 @@
     <string name="button_forgot_password">Quên mật khẩu?</string>
     <string name="button_login">Đăng nhập</string>
     <string name="button_setting">Cài đặt</string>
-    <string name="button_submit">Đăng nhập</string>
+    <string name="button_submit">Xem danh sách</string>
     <string name="main_left_label">Xin chào !</string>
     <string name="screen_setting">Thiết lập</string>
     <string name="button_setting_apply">Đồng ý</string>
     <string name="checkbox_setting_auto_start">Tự động chạy</string>
+    <string name="back">Back</string>
+    <string name="listview_title">List example</string>
+    <string name="thiet_lap_tieu_su">Thiết lập tiểu sử của tôi</string>
 </resources>

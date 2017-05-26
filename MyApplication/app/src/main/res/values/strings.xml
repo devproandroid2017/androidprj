@@ -4,7 +4,7 @@
     <string name="main_right_label">Xin chao</string>
 
     <!-- Text for login screen -->
-    <string name="button_submit">Submit</string>
+    <string name="button_submit">View list item</string>
     <string name="button_cancel">Cancel</string>
     <string name="button_login">Log In</string>
     <string name="button_forgot_password">Forgot Password?</string>
@@ -18,4 +18,7 @@
     <string name="button_setting_apply">Apply</string>
     <string name="checkbox_setting_auto_start">Auto start</string>
     <string name="name">Name</string>
+    <string name="back">Back</string>
+    <string name="listview_title">List example</string>
+    <string name="thiet_lap_tieu_su">Set contact info</string>
 </resources>

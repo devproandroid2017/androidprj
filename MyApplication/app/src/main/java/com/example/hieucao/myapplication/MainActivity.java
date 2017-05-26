@@ -47,7 +47,10 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View view) {
             if(view.getId() == R.id.btnSubmit) {
                 Log.d("MainActivity", "Button submit click!");
-                txtUserName.setText("Submit");
+                //change to listview_example
+                Intent intent = new Intent(MainActivity.this, ListViewExampleActivity.class);
+                MainActivity.this.startActivity(intent);
+
             }else if(view.getId() == R.id.btnCancel){
                 Log.d("MainActivity","Button cancel click!");
                 txtUserId.setText("Cancel");
